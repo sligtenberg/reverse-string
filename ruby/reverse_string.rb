@@ -1,5 +1,10 @@
 def reverse_string(str)
-  # type your code in here
+  result = ''
+
+  str.chars.each do |char|
+    result = char + result
+  end
+  result
 end
 
 if __FILE__ == $PROGRAM_NAME
